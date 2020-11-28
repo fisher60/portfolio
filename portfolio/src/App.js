@@ -12,13 +12,13 @@ function App() {
       <Switch>
 
       <Route path="/about">
-          <div style={{transition: "margin-left .5s"}}>
+          <div style={{transition: "margin-left .5s", marginLeft: "65px"}}>
             <About />
           </div>
       </Route>
 
         <Route path="/">
-          <div style={{transition: "margin-left .5s"}}>
+          <div style={{transition: "margin-left .5s", marginLeft: "65px"}}>
             <Home />
           </div>
         </Route>
