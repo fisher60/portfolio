@@ -5,3 +5,9 @@ body, html{
   margin: 0;
   padding: 0;
 }
+
+.content-right{
+  transition: "margin-left .5s";
+  padding: 25px;
+  color: white;
+}

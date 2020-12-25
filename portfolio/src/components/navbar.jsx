@@ -6,32 +6,31 @@ import "./navbar.css";
 
 export default class Navbar extends Component{
     state = {
-            navWidth: 65,
-            buttonWidth: 20,
+            // navWidth: 65,
+            navClass: "collapsed",
+            // buttonWidth: 20,
             toggle: false
         }
 
     toggleCollapse = () => {
-        this.setState({navWidth: this.state.toggle ? 65 : 250, toggle: this.state.toggle ? false : true})
+        this.setState({navClass: this.state.toggle ? "collapsed" : "extended", toggle: !this.state.toggle})
     }
     render(){
         return(
-            <div className="nav" style={{width: String(this.state.navWidth) + "px"}}>
-                <div className="icon">
+            <div className={"nav " + this.state.navClass}>
+                <div className={"icon " + this.state.navClass}>
                     <Link to="/">
                         <img src={homeIcon} alt="home icon"/>
                     </Link>
                 </div>
 
-        <h1>{String(this.state.navWidth)}</h1>
-
-                <div className="icon">
+                <div className={"icon " + this.state.navClass}>
                     <Link to="/about">
                         <img src={homeIcon} alt="home icon"/>
                     </Link>
                 </div>
 
-                <button className="collapse-button" onClick={this.toggleCollapse} style={{marginLeft: String(this.state.navWidth - this.state.buttonWidth) + "px"}}>E/C</button>
+                <button className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse}>E/C</button>
 
             </div>
         )

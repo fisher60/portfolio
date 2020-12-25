@@ -1,13 +1,30 @@
 .nav{
     background-color: #465d82;
-    position: absolute;
-    height: 100%;
+    float: left;
+    height: 100vh;
+    transition: width .5s;
+}
+
+.nav.collapsed{
+    width: 0px;
+}
+
+.nav.extended{
+    width: 65px;
 }
 
 .icon{
+    transition: width .5s;
+}
+
+.icon.extended{
     margin: 0 auto;
-    width: 70%;
+    width: 50px;
     padding: 5px;
+}
+
+.icon.collapsed{
+    width: 0px;
 }
 
 .icon img{
@@ -20,4 +37,14 @@
 .collapse-button{
     position: absolute;
     bottom: 50%;
+    width: 40px;
+    transition: margin-left .5s;
+}
+
+.collapse-button.collapsed{
+    margin-left: 0px;
+}
+
+.collapse-button.extended{
+    margin-left: 65px;
 }

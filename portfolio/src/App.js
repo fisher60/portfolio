@@ -9,21 +9,23 @@ function App() {
     <Router>
         <Navbar />
 
-      <Switch>
+      <div className="content-right">
+        <Switch>
 
-      <Route path="/about">
-          <div style={{transition: "margin-left .5s", marginLeft: "65px"}}>
-            <About />
-          </div>
-      </Route>
-
-        <Route path="/">
-          <div style={{transition: "margin-left .5s", marginLeft: "65px"}}>
-            <Home />
-          </div>
+        <Route path="/about">
+            <div>
+              <About />
+            </div>
         </Route>
-        
-      </Switch>
+
+          <Route path="/">
+            <div>
+              <Home />
+            </div>
+          </Route>
+          
+        </Switch>
+      </div>
 
     </Router>
   );
