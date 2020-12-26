@@ -1,0 +1,10 @@
+.category-container{
+    width: 30vw;
+    padding: 3vw;
+}
+
+.category{
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
