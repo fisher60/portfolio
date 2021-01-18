@@ -8,9 +8,9 @@ export default function Home(){
                 <h1>Intro</h1>
             </div>
                 <div className="categories-container">
-                <Category title="Programming" />
+                <Category title="Aviation" />
                 <Category title="Personal" />
-                <Category title="Portfolio" />
+                <Category title="Programming" />
             </div>
         </div>
     )
