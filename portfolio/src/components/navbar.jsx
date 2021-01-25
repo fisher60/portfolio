@@ -24,12 +24,6 @@ export default class Navbar extends Component{
                     </Link>
                 </div>
 
-                <div className={"icon " + this.state.navClass}>
-                    <Link to="/about">
-                        <img src={homeIcon} alt="home icon"/>
-                    </Link>
-                </div>
-
                 <button className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse}>E/C</button>
 
             </div>

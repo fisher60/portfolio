@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar.jsx";
 import Home from "./components/home.jsx";
-import About from "./components/about.jsx";
+import Aviation from "./components/aviation.jsx";
+import Personal from "./components/personal.jsx";
+import Programming from "./components/programming.jsx";
 import "./App.css";
 
 function App() {
@@ -12,9 +14,21 @@ function App() {
       <div className="content-right">
         <Switch>
 
-        <Route path="/about">
+        <Route path="/aviation">
             <div>
-              <About />
+              <Aviation />
+            </div>
+        </Route>
+
+        <Route path="/personal">
+            <div>
+              <Personal />
+            </div>
+        </Route>
+
+        <Route path="/programming">
+            <div>
+              <Programming />
             </div>
         </Route>
 

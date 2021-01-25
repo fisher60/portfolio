@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./category.css";
-import sampleImg from "./sample.jpg";
 
 export default function Category(props){
     const [isHovered, setIsHovered] = useState(false);
@@ -9,8 +9,8 @@ export default function Category(props){
             <div className="category"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}>
-                <div className="category-title"><h3>{ props.title }</h3></div>
-                <img className={"category-img" + (isHovered ? " hovered" : "")} alt="background" src={sampleImg} />
+                <NavLink to={"/" + props.navLink} className="category-title"><h3>{ props.title }</h3></NavLink>
+                <img className={"category-img" + (isHovered ? " hovered" : "")} alt="background" src={props.backgroundImg} />
             </div>
         </div>
     )
