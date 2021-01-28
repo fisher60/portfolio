@@ -1,0 +1,14 @@
+.intro-wrapper{
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+}
+.title-mid{
+    margin-left: 20px;
+}
+
+.title-bot{
+    margin-left: 40px;
+}
