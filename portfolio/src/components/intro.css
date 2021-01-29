@@ -1,9 +1,13 @@
 .intro-wrapper{
+    position: relative;
     text-align: left;
     font-family: 'Courier New', monospace;
     margin: 0 auto;
-    width: 50%;
+    padding: 2%;
+    width: 75%;
+    height: 20vh;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .title-mid{
     margin-left: 20px;
@@ -11,4 +15,18 @@
 
 .title-bot{
     margin-left: 40px;
+}
+
+.intro-text{
+    display: inline;
+    float: left;
+    height: 100%;
+}
+
+.profile-picture{
+    display: inline;
+    float: right;
+    height: 100%;
+    width: 30%;
+    background-color: black;
 }

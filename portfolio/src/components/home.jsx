@@ -19,7 +19,7 @@ export default function Home(){
                 <Category title="Programming" navLink="programming" backgroundImg={programmingImg}/>
             </div>
 
-            <Outro />
+            {/* <Outro /> */}
         </div>
     )
 }
