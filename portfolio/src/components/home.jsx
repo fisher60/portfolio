@@ -2,7 +2,6 @@ import "./home.css";
 
 import Intro from "./intro.jsx";
 import Category from "./category.jsx";
-import Outro from "./outro.jsx";
 
 import aviationImg from "./aviation.jpg";
 import personalImg from "./personal.jpg";
@@ -19,7 +18,6 @@ export default function Home(){
                 <Category title="Programming" navLink="programming" backgroundImg={programmingImg}/>
             </div>
 
-            {/* <Outro /> */}
         </div>
     )
 }

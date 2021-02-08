@@ -1,14 +1,23 @@
 .intro-wrapper{
-    position: relative;
+    position: absolute;
     text-align: left;
     font-family: 'Courier New', monospace;
     margin: 0 auto;
-    padding: 2%;
-    width: 75%;
-    height: 20vh;
+    width: 100vw;
+    height: 25vh;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
+
+.title-wrapper{
+    position: relative;
+    height: 100%;
+    margin: 0 5%;
+}
+
 .title-mid{
     margin-left: 20px;
 }
