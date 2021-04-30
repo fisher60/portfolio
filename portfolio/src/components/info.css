@@ -7,3 +7,8 @@
     padding-top: 10px;
     font-size: 1.2rem;
 }
+
+.info-link{
+    text-decoration: none;
+    color: lightseagreen;
+}
