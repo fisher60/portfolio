@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import homeIcon from "./home.png";
+import arrowIcon from "./right-arrow.png";
 import "./navbar.css";
 
 export default class Navbar extends Component{
@@ -24,7 +25,7 @@ export default class Navbar extends Component{
                     </Link>
                 </div>
 
-                <button className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse}>E/C</button>
+                <img src={arrowIcon} className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse} alt="Navbar expand/collapse button"/>
 
             </div>
         )

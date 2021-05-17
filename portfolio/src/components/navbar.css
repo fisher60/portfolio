@@ -40,7 +40,12 @@
     position: absolute;
     bottom: 50%;
     width: 40px;
-    transition: margin-left .5s;
+    transition: margin-left .5s, transform 0.5s;
+    border-radius: 0 20% 20% 0;
+}
+
+.collapse-button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .collapse-button.collapsed{
@@ -49,4 +54,10 @@
 
 .collapse-button.extended{
     margin-left: 65px;
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
 }

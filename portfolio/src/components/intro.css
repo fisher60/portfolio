@@ -16,6 +16,7 @@
     position: relative;
     height: 100%;
     margin: 0 5%;
+    overflow: hidden;
 }
 
 .title-mid{
@@ -35,7 +36,7 @@
 .profile-picture{
     display: inline;
     float: right;
-    height: 100%;
     width: 30%;
     background-color: black;
+    margin-top: -40px;
 }
