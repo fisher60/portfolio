@@ -28,8 +28,9 @@
 }
 
 .intro-text{
-    display: inline;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
 }
 

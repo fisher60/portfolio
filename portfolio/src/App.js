@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar.jsx";
-import Home from "./components/home.jsx";
-import Aviation from "./components/aviation.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Home from "./components/home/Home.jsx";
+import Aviation from "./components/aviation/Aviation.jsx";
 import Personal from "./components/personal.jsx";
 import Programming from "./components/programming.jsx";
 import "./App.css";
@@ -9,11 +9,9 @@ import "./App.css";
 function App() {
   return (
     <Router>
-        <Navbar />
-
+      <Navbar />
       <div className="content-right">
         <Routes>
-
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="/aviation" element={<Aviation />}/>
@@ -22,7 +20,6 @@ function App() {
           </Route>
         </Routes>
       </div>
-
     </Router>
   );
 }
