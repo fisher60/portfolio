@@ -1,22 +1,9 @@
-.nav{
-    position: absolute;
-    background-color: #465d82;
-    float: left;
-    height: 100vh;
-    transition: width .5s;
-    z-index: 1;
-}
-
 .nav.collapsed{
-    width: 0;
+    width: 0px;
 }
 
 .nav.extended{
     width: 65px;
-}
-
-.icon{
-    transition: width .5s;
 }
 
 .icon.extended{
@@ -27,25 +14,6 @@
 
 .icon.collapsed{
     width: 0;
-}
-
-.icon img{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.collapse-button{
-    position: absolute;
-    bottom: 50%;
-    width: 40px;
-    transition: margin-left .5s, transform 0.5s;
-    border-radius: 0 20% 20% 0;
-}
-
-.collapse-button:hover{
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .collapse-button.collapsed{

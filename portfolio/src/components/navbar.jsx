@@ -18,14 +18,25 @@ export default class Navbar extends Component{
     }
     render(){
         return(
-            <div className={"nav " + this.state.navClass}>
-                <div className={"icon " + this.state.navClass}>
-                    <Link to="/">
-                        <img src={homeIcon} alt="home icon"/>
-                    </Link>
+            <div className="float-left h-screen">
+                <div className={"absolute bg-[#465d82] duration-500 h-full nav " + this.state.navClass}>
+                    <div className={"duration-500 icon " + this.state.navClass}>
+                        <Link to="/">
+                            <img className="w-full bg-white bg-opacity-10 mt-2 rounded-md" src={homeIcon} alt="home icon"/>
+                        </Link>
+                    </div>
                 </div>
 
-                <img src={arrowIcon} className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse} alt="Navbar expand/collapse button"/>
+                <div>
+                    <img 
+                        src={arrowIcon} 
+                        className={
+                            "absolute bottom-2/4 w-10 duration-500 bg-black bg-opacity-0 rounded-r-lg" +
+                            "hover:bg-opacity-10 collapse-button " + this.state.navClass} 
+                        onClick={this.toggleCollapse} 
+                        alt="Navbar expand/collapse button"
+                    />
+                </div>
 
             </div>
         )
