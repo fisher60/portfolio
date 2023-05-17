@@ -1,5 +1,4 @@
 import {GITHUB_URL} from "./constants";
-import "./info.css";
 
 export default function Programming(){
     return(

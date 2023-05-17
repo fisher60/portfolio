@@ -1,5 +1,3 @@
-import "./info.css";
-
 export default function Personal(){
     return(
         <div className="info-container">
