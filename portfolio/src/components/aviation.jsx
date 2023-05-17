@@ -1,6 +1,6 @@
 export default function Aviation(){
     return(
-        <div className="md:ml-12">
+        <div className="md:mx-20">
             <h1 className="text-4xl text-center md:text-left text-orange-500">Aviation</h1>
 
             <hr className="mt-6 mb-6" />
