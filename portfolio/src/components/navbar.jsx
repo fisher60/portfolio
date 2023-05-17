@@ -7,9 +7,7 @@ import "./navbar.css";
 
 export default class Navbar extends Component{
     state = {
-            // navWidth: 65,
             navClass: "collapsed",
-            // buttonWidth: 20,
             toggle: false
         }
 
@@ -19,7 +17,7 @@ export default class Navbar extends Component{
     render(){
         return(
             <div className="float-left h-screen">
-                <div className={"absolute bg-[#465d82] duration-500 h-full nav " + this.state.navClass}>
+                <div className={"absolute bg-orange-400 duration-500 h-full nav " + this.state.navClass}>
                     <div className={"duration-500 icon " + this.state.navClass}>
                         <Link to="/">
                             <img className="w-full bg-white bg-opacity-10 mt-2 rounded-md" src={homeIcon} alt="home icon"/>
