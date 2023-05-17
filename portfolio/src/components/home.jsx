@@ -2,7 +2,7 @@ import Category from "./category.jsx";
 
 import aviationImg from "./aviation.jpg";
 import personalImg from "./personal.jpg";
-import programmingImg from "./programming.jpg";
+import programmingImg from "./professional.jpg";
 
 export default function Home(){
     return(
@@ -16,7 +16,7 @@ export default function Home(){
             <div className="flex flex-col md:flex-row items-center justify-center md:space-x-5 pt-20">
                 <Category title="Aviation" navLink="aviation" backgroundImg={aviationImg}/>
                 <Category title="Personal" navLink="personal" backgroundImg={personalImg}/>
-                <Category title="Programming" navLink="programming" backgroundImg={programmingImg}/>
+                <Category title="Professional" navLink="professional" backgroundImg={programmingImg}/>
             </div>
 
         </div>
