@@ -7,27 +7,62 @@ import "./navbar.css";
 
 export default class Navbar extends Component{
     state = {
-            // navWidth: 65,
             navClass: "collapsed",
-            // buttonWidth: 20,
             toggle: false
         }
 
     toggleCollapse = () => {
         this.setState({navClass: this.state.toggle ? "collapsed" : "extended", toggle: !this.state.toggle})
     }
+    
     render(){
-        return(
-            <div className={"nav " + this.state.navClass}>
-                <div className={"icon " + this.state.navClass}>
+        let desktopNavbar = <div className="float-left h-screen">
+            <div className={"absolute bg-orange-400 duration-500 h-full nav " + this.state.navClass}>
+                <div className={"duration-500 icon " + this.state.navClass}>
                     <Link to="/">
-                        <img src={homeIcon} alt="home icon"/>
+                        <img className="w-full bg-white bg-opacity-10 mt-2 rounded-md" src={homeIcon} alt="home icon"/>
                     </Link>
                 </div>
-
-                <img src={arrowIcon} className={"collapse-button " + this.state.navClass} onClick={this.toggleCollapse} alt="Navbar expand/collapse button"/>
-
             </div>
+
+            <div>
+                <img 
+                    src={arrowIcon}
+                    className={
+                        "absolute bottom-2/4 w-10 duration-500 bg-black bg-opacity-0 rounded-r-lg" +
+                        "hover:bg-opacity-10 collapse-button " + this.state.navClass}
+                    onClick={this.toggleCollapse}
+                    alt="Navbar expand/collapse button"
+                />
+            </div>
+
+        </div>
+    
+    let mobileNavbar = <div className={"flex justify-center w-screen bg-orange-400 h-20 p-4 duration-500 mobile-nav " + this.state.navClass}>
+        <Link to="/">
+            <img className="h-full" src={homeIcon} alt="home icon"/>
+        </Link>
+
+        <img 
+            src={arrowIcon} 
+            className={
+                "absolute right-3 top-8 rotate-[270deg] w-10 duration-500 bg-black bg-opacity-0 rounded-r-lg" +
+                "hover:bg-opacity-10 mobile-collapse-button " + this.state.navClass}
+            onClick={this.toggleCollapse}
+            alt="Navbar expand/collapse button"
+        />
+    </div>
+
+        return(
+            <>
+                <div className="md:hidden">
+                    {mobileNavbar}
+                </div>
+
+                <div className="hidden md:block">
+                    {desktopNavbar}
+                </div>
+            </>
         )
     }
 }

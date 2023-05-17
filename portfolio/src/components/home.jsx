@@ -1,21 +1,22 @@
-import "./home.css";
-
-import Intro from "./intro.jsx";
 import Category from "./category.jsx";
 
 import aviationImg from "./aviation.jpg";
 import personalImg from "./personal.jpg";
-import programmingImg from "./programming.jpg";
+import programmingImg from "./professional.jpg";
 
 export default function Home(){
     return(
-        <div className="home-content">
-            <Intro />
+        <div>
+            <div className="flex flex-col pt-8">
+                <p className="text-6xl ml-16">Hello,</p>
+                <p className="text-4xl ml-32 pt-2">I am <span className="text-orange-400">Kyler</span></p>
+                <p className="text-2xl ml-40 pt-2">I program and fly airplanes.</p>
+            </div>
 
-            <div className="categories-container">
+            <div className="flex flex-col md:flex-row items-center justify-center md:space-x-5 pt-20">
                 <Category title="Aviation" navLink="aviation" backgroundImg={aviationImg}/>
                 <Category title="Personal" navLink="personal" backgroundImg={personalImg}/>
-                <Category title="Programming" navLink="programming" backgroundImg={programmingImg}/>
+                <Category title="Professional" navLink="professional" backgroundImg={programmingImg}/>
             </div>
 
         </div>

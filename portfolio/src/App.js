@@ -3,7 +3,7 @@ import Navbar from "./components/navbar.jsx";
 import Home from "./components/home.jsx";
 import Aviation from "./components/aviation.jsx";
 import Personal from "./components/personal.jsx";
-import Programming from "./components/programming.jsx";
+import Professional from "./components/professional.jsx";
 import "./App.css";
 
 function App() {
@@ -11,14 +11,14 @@ function App() {
     <Router>
         <Navbar />
 
-      <div className="content-right">
+      <div className="md:pl-8 text-white content-right md: overflow-hidden">
         <Routes>
 
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="/aviation" element={<Aviation />}/>
             <Route path="/personal" element={<Personal />}/>
-            <Route path="/programming" element={<Programming />}/>
+            <Route path="/professional" element={<Professional />}/>
           </Route>
         </Routes>
       </div>
