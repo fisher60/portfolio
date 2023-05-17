@@ -5,9 +5,9 @@ import "./category.css";
 export default function Category(props){
     const [isHovered, setIsHovered] = useState(false);
     return(
-        <div className="md:w-[25vw]">
+        <div className="w-screen md:w-[25vw]">
             <div className={
-                    "relative md:h-[20vw] border-solid border-transparent rounded-2xl border-8 " +
+                    "relative h-[50vh] md:h-[20vw] border-solid border-transparent rounded-2xl border-8 " +
                     "bg-transparent overflow-hidden"
                 }
                 onMouseEnter={() => setIsHovered(true)}

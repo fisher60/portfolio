@@ -13,7 +13,7 @@ export default function Home(){
                 <p className="text-2xl ml-40 pt-2">I program and fly airplanes.</p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center pt-20">
+            <div className="flex flex-col md:flex-row items-center justify-center md:space-x-5 pt-20">
                 <Category title="Aviation" navLink="aviation" backgroundImg={aviationImg}/>
                 <Category title="Personal" navLink="personal" backgroundImg={personalImg}/>
                 <Category title="Programming" navLink="programming" backgroundImg={programmingImg}/>
