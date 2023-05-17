@@ -15,12 +15,12 @@ responsibilties.sort();
 export default function Professional(){
     let responsibilityItems = responsibilties.map((str, i) => <li key={i}>{str}</li>)
     return(
-        <div className="md:mx-20">
-            <h1 className="text-4xl text-center md:text-left text-orange-500">Professional</h1>
+        <div className="pt-8 mx-8 md:px-20 md:pb-8 md:h-screen overflow-y-auto">
+            <h1 className="text-4xl text-center md:text-left text-orange-500 mt-0">Professional</h1>
 
             <hr className="mt-6 mb-6" />
             
-            <p className="text-lg">
+            <p className="text-lg mt-4">
                 I am a professional<span className="text-orange-500"> Software Developer</span> with most of my 
                 knowledge being in backend web developement with Python. I have professional experience with automated
                 testing using both Python and Java.
@@ -57,6 +57,8 @@ export default function Professional(){
                 <ul className="list-disc pl-12">
                     {responsibilityItems}
                 </ul>
+
+                <span className="text-sm">Checkout my <a className="underline text-orange-500">Github</a> to see many of my personal projects</span>
             </p>
         </div>
     )

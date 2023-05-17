@@ -14,7 +14,7 @@ hobbies.sort();
 export default function Personal(){
     let hobbyItems = hobbies.map((str, i) => <li key={i}>{str}</li>)
     return(
-        <div className="md:mx-20">
+        <div className="pt-8 mx-8 md:px-20 md:pb-8 md:h-screen overflow-y-auto">
             <h1 className="text-4xl text-center md:text-left text-orange-500">Personal</h1>
 
             <hr className="mt-6 mb-6" />

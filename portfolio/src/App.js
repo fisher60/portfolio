@@ -11,7 +11,7 @@ function App() {
     <Router>
         <Navbar />
 
-      <div className="content-right">
+      <div className="md:pl-8 text-white content-right md: overflow-hidden">
         <Routes>
 
           <Route path="/">
