@@ -6,6 +6,10 @@
     width: 65px;
 }
 
+.mobile-nav.collapsed{
+    height: 0px;
+}
+
 .icon.extended{
     margin: 0 auto;
     width: 50px;
@@ -28,4 +32,12 @@
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 
+}
+
+.mobile-collapse-button.collapsed {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
