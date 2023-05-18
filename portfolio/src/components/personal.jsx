@@ -23,7 +23,7 @@ export default function Personal(){
                 Programming is one of my greatest passions. I often work on my personal projects or contribute
                 to open source in my spare time. My favorite language is Python. I owe much of my knowledge and
                 experience to Python and the Python community. As a result, I am actually an admin for a very large
-                Python community--<a className="text-orange-500 underline" href="https://www.pythondiscord.com/" rel="noopener" target="_blank" >Python Discord</a>
+                Python community--<a className="text-orange-500 underline" href="https://www.pythondiscord.com/" rel="noreferrer" target="_blank" >Python Discord</a>
 
                 <br />
                 <br />

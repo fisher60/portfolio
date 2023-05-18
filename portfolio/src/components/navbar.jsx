@@ -30,7 +30,7 @@ export default class Navbar extends Component{
                     src={arrowIcon}
                     className={
                         "absolute bottom-2/4 w-10 duration-500 bg-black bg-opacity-0 rounded-r-lg" +
-                        "hover:bg-opacity-10 collapse-button " + this.state.navClass}
+                        "hover:bg-opacity-10 hover:cursor-pointer collapse-button " + this.state.navClass}
                     onClick={this.toggleCollapse}
                     alt="Navbar expand/collapse button"
                 />

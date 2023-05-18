@@ -23,7 +23,8 @@ export default function Professional(){
             <p className="text-lg mt-4">
                 I am a professional<span className="text-orange-500"> Software Developer</span> with most of my 
                 knowledge being in backend web developement with Python. I have professional experience with automated
-                testing using both Python and Java.
+                testing using both Python and Java as well as general Python experience from my position as a
+                Backend Integration Engineer.
             </p>
 
             <h1 className="text-2xl text-center md:text-left text-orange-500 mt-4">Systems Test Engineer</h1>
@@ -40,8 +41,9 @@ export default function Professional(){
             <h1 className="text-2xl text-center md:text-left text-orange-500 mt-4">Backend Integration Engineer</h1>
             <p className="mt-2">
                 In my role as a
-                <span className="text-orange-500"> Backend Integration Engineer</span> I primarly used 
-                <span className="text-orange-500"> Starlark-Go</span>--Google's Golang implementation of the bazel 
+                <span className="text-orange-500"> Backend Integration Engineer</span> I primarly 
+                used <a className="text-orange-500 underline" href="https://github.com/google/starlark-go" rel="noreferrer" target="_blank" >Starlark-Go</a>
+                --Google's Golang implementation of the bazel
                 build language. My primary responsibilty was to extract, transform, and load data from third-party 
                 merchants. Merchant data came in a range of formats and often sat somewhere between "structured" and
                 "nearly random." My job was to ensure that data provided by the merchant fit into our existing API. I
@@ -58,7 +60,7 @@ export default function Professional(){
                     {responsibilityItems}
                 </ul>
 
-                <span className="text-sm">Checkout my <a className="underline text-orange-500">Github</a> to see many of my personal projects</span>
+                <span className="text-sm">Checkout my <a className="underline text-orange-500" href={GITHUB_URL} rel="noreferrer" target="_blank">Github</a> to see many of my personal projects</span>
             </p>
         </div>
     )
