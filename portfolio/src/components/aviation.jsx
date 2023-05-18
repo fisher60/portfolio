@@ -7,7 +7,7 @@ export default function Aviation(){
             
             <p className="text-lg">
                 I am a commercial and instrument rated pilot. I have just around 300 hours of flight time
-                and have a large passion for the aviation industry as a whole. I received a 
+                and have a large passion for the aviation industry as a whole. I earned a 
                 <span className="text-orange-500"> Bachelor's Degree in Aviation</span> from San Jose State University.
 
                 <br />
@@ -20,8 +20,8 @@ export default function Aviation(){
                 <br />
 
                 Though I have moved my focus to various areas of technology and programming, I still love aviation
-                and hope to continue to exercise this passion in my spare time as a hobbist as well as trhough
-                open source projects in this field.
+                and hope to continue to exercise this passion in my spare time as a hobbyist as well as through
+                open source projects.
             </p>
         </div>
     )
