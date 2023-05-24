@@ -56,12 +56,14 @@ export default function Professional(){
                 <br />
 
                 Other essential responsibilties included:
-                <ul className="list-disc pl-12">
-                    {responsibilityItems}
-                </ul>
+                
 
-                <span className="text-sm">Checkout my <a className="underline text-orange-500" href={GITHUB_URL} rel="noreferrer" target="_blank">Github</a> to see many of my personal projects</span>
             </p>
+            <ul className="list-disc pl-12 mt-2">
+                {responsibilityItems}
+            </ul>
+
+            <p className="text-sm mt-4">Checkout my <a className="underline text-orange-500" href={GITHUB_URL} rel="noreferrer" target="_blank">Github</a> to see many of my personal projects</p>
         </div>
     )
 }
