@@ -42,13 +42,11 @@ export default function Personal(){
 
                 <br />
                 <br />
-
                 Some of my many hobbies include:
-                <ul className="list-disc pl-12">
-                    {hobbyItems}
-                </ul>
-                
             </p>
+            <ul className="list-disc pl-12 mt-2">
+                {hobbyItems}
+            </ul>
         </div>
     )
 }
