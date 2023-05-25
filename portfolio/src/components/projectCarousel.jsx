@@ -32,7 +32,7 @@ export default function ProjectCarousel() {
     }
 )
 
-let carouselButtons = [...Array(carouselItems.length).keys()].map((i) => <a href={"#item" + i} key={i} className="btn btn-xs">{i + 1}</a>)
+let carouselButtons = [...Array(carouselItems.length).keys()].map((i) => <a href={"#item" + i} key={i} className="btn btn-xs text-orange-400">{i + 1}</a>)
     return (
         <div className="flex flex-col items-center mt-4">
             <h1 className="text-2xl">Some of my projects:</h1>
