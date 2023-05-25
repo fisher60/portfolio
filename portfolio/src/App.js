@@ -9,22 +9,23 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
+    <div className="bg-slate-700 min-w-[100vw] min-h-[100vh]">
+      <Router>
+        <ScrollToTop />
         <Navbar />
 
-      <div className="md:pl-8 text-white content-right md: overflow-hidden">
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="/aviation" element={<Aviation />}/>
-            <Route path="/personal" element={<Personal />}/>
-            <Route path="/professional" element={<Professional />}/>
-          </Route>
-        </Routes>
-      </div>
-
-    </Router>
+        <div className="md:pl-8 text-white content-right md:overflow-hidden">
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="/aviation" element={<Aviation />}/>
+              <Route path="/personal" element={<Personal />}/>
+              <Route path="/professional" element={<Professional />}/>
+            </Route>
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 
