@@ -44,6 +44,7 @@ export default function LoopText() {
             .from(".word1", {
                 y: 100,
                 duration: 1,
+                ease: "power4"
             })
             .to(".word1", {
                 y: -100,

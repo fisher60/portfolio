@@ -1,3 +1,6 @@
+import { useLayoutEffect, useRef } from "react";
+import {gsap} from "gsap";
+
 import LoopText from "./loopText";
 import {GITHUB_URL, LINKEDIN_URL} from "./constants";
 
@@ -6,6 +9,26 @@ import githubLogo from "./github.svg";
 import linkedinLogo from "./linkedin.svg";
 
 export default function Banner() {
+    const airplaneRef = useRef();
+    const tl = useRef();
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            tl.current = gsap.timeline()
+            .fromTo(airplaneRef.current, {
+                y: 400,
+                duration: 6
+            },
+            {
+                y: 0,
+                duration: 3,
+                ease: "back"
+            })
+        }, airplaneRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div className="w-screen flex flex-col justify-center items-center px-6 py-6 md:px-0">
             <h1 className="text-9xl">Kyler Roloff</h1>
@@ -16,17 +39,17 @@ export default function Banner() {
 
             <div className="avatar mt-12">
                 <div className="w-64 p-3 bg-white bg-opacity-30 rounded-full">
-                    <img src={airplaneImage} alt="Pixel art of a fighter jet airplane"/>
+                    <img src={airplaneImage} ref={airplaneRef} alt="Pixel art of a fighter jet airplane"/>
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row w-screen justify-center p-4 md:p-0 mt-6 space-y-12 md:space-x-12 md:space-y-0">
+            <div className="flex flex-col text-center md:text-left md:flex-row w-screen justify-center p-4 md:p-0 mt-6 space-y-12 md:space-x-12 md:space-y-0">
                 <div className="flex flex-col items-center">
                     <h1 className="text-5xl">Who I Am</h1>
                     <div className="divider md:w-[460px] self-center" />
                     <p className="md:w-[460px] text-xl">
                         I am a software developer who loves learning. I have a wide variety of interests and hobbies
-                        that span from gardening and dog training to aviation and technology.
+                        that I often incorporate into technology.
                     </p>
                 </div>
 
@@ -34,7 +57,7 @@ export default function Banner() {
                     <h1 className="text-5xl">What I Do</h1>
                     <div className="divider md:w-[460px] self-center" />
                     <p className="md:w-[460px] text-xl">
-                        I spend my free time refining my programmign skills through open-source software and personal
+                        I spend my free time programming for open-source software and personal
                         projects. I also love gaming, flying airplanes, and spending time with my dog.
                     </p>
                 </div>
