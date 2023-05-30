@@ -42,14 +42,14 @@ export default function LoopText() {
                 }
             )
             .from(".word1", {
-                y: 100,
-                duration: 1,
+                y: 50,
+                duration: 0.8,
                 ease: "power4"
             })
             .to(".word1", {
-                y: -100,
-                duration: 1,
-                delay: 2,
+                y: -50,
+                duration: 0.8,
+                delay: 1,
                 onComplete: update
             })
         }, el);
@@ -58,8 +58,8 @@ export default function LoopText() {
 
     return (
     <div ref={el} className="flex flex-row w-full overflow-hidden">
-        <div className="w-40 text-right word1">{displayValues[displayTextInd]}</div>
-        <div className="ml-1">Developer</div>
+        <div className="w-40 text-right mr-2 word1">{displayValues[displayTextInd]}</div>
+        <div>Developer</div>
     </div>
     );
 }

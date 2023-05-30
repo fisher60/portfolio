@@ -5,7 +5,7 @@ const backgroundGradient = "bg-gradient-to-b md:bg-gradient-to-br from-indigo-50
 
 function App() {
   return (
-    <div className={`w-screen h-full min-h-[100vh] text-white overflow-x-hidden md:overflow-y-hidden ${backgroundGradient}`}>
+    <div className={`w-screen h-full min-h-[100vh] font-primary text-white overflow-x-hidden md:overflow-y-hidden ${backgroundGradient}`}>
 
       <Banner />
       
